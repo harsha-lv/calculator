@@ -1,92 +1,82 @@
-body{
-    display: flex;
-    height: 97vh;
-    justify-content: center;
-    align-items: center;
+body {
+  display: flex;
+  height: 97vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    height: 85vh;
-    width: 25vw;
+.container {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  height: 85vh;
+  width: 25vw;
 }
 
-.display-container{
-    margin: 25px;
-    display: flex;
-    justify-content: flex-end;
-    background-color: green;
-    border-radius: 5px;
-    width: 335px;
-    height: 75px; 
+.display-container {
+  margin: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: green;
+  border-radius: 5px;
+  width: 335px;
+  height: 75px;
 }
 
-.display{
-    padding: 20px;
-    color: white;
-    font-size: 30px;
+.display {
+  padding: 20px;
+  color: white;
+  font-size: 30px;
 }
 
-.misc{
-    padding-left: 25px;
-    padding-right: 25px;
-    display: flex;
-    gap: 5px;
-    justify-content: space-between;
-    font-size: 20px;
-    height: 50px;
+.misc {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 20px;
 }
 
-#ac, #del{
-    flex: 1;
-    font-size: 20px;
+#ac, #del {
+  flex: 1;
+  font-size: 20px;
 }
 
-.btns{
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    flex: 1;
-    flex-shrink: 0;
+.btns {
+  display: flex;
+  flex: 1;
+  padding: 25px;
+  justify-content: space-between;
+  flex-shrink: 0;
 }
 
-.digits-container, .operator-container{
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
+.digits-container {
+  flex: 4;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 15px;
+  width: 100%;
 }
 
-.digits-container{
-    flex: 4;
-    width: 100%;
-    column-gap: 15px;
+.operator-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 15px;
 }
 
-.digit{
-    font-size: 30px;
+.digit, .operator {
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
 }
 
-.operator-container{
-    align-items: flex-end;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.operator{
-    font-size: 30px;
-    flex: 1;
-    width: 100%;
-}
-
-.operator, .digit{
-    height: 70px;
-    width: 70px;
-}
-
-.zero-digit{
-    width: calc(70px * 3 + 30px);
-    height: calc(70px + 35px);
-    column-gap: 0px;
+.zero-digit {
+  width: calc(70px * 2 + 15px);
 }
