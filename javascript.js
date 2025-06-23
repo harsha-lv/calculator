@@ -9,9 +9,12 @@ const digitsContainer=document.querySelector(".digits-container");
 const operatorContainer=document.querySelector(".operator-container");
 
 function main(){
-    for(let i=0;i<=9;i++){
+    for(let i=9;i>=0;i--){
         let digit=document.createElement("button");
         digit.classList.add("digit");
+        if (i===0){
+            digit.classList.add("zero-digit");
+        }
         digit.textContent=i;
         digitsContainer.appendChild(digit);
     }

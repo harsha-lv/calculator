@@ -9,27 +9,39 @@ body{
     display: flex;
     flex-direction: column;
     background-color: black;
-    height: 75vh;
+    height: 85vh;
     width: 25vw;
 }
 
 .display-container{
-    padding: 25px;
+    margin: 25px;
     display: flex;
     justify-content: flex-end;
+    background-color: green;
+    border-radius: 5px;
+    width: 335px;
+    height: 75px; 
 }
 
 .display{
+    padding: 20px;
     color: white;
+    font-size: 30px;
 }
 
 .misc{
+    padding-left: 25px;
     padding-right: 25px;
     display: flex;
     gap: 5px;
-    justify-content: flex-end;
+    justify-content: space-between;
     font-size: 20px;
-    
+    height: 50px;
+}
+
+#ac, #del{
+    flex: 1;
+    font-size: 20px;
 }
 
 .btns{
@@ -37,6 +49,7 @@ body{
     justify-content: space-between;
     padding: 25px;
     flex: 1;
+    flex-shrink: 0;
 }
 
 .digits-container, .operator-container{
@@ -48,12 +61,10 @@ body{
 .digits-container{
     flex: 4;
     width: 100%;
-    gap: 15px;
+    column-gap: 15px;
 }
 
 .digit{
-    width: 72px;
-    height: 72px;
     font-size: 30px;
 }
 
@@ -69,3 +80,13 @@ body{
     width: 100%;
 }
 
+.operator, .digit{
+    height: 70px;
+    width: 70px;
+}
+
+.zero-digit{
+    width: calc(70px * 3 + 30px);
+    height: calc(70px + 35px);
+    column-gap: 0px;
+}
