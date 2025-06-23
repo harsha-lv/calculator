@@ -78,5 +78,5 @@ body {
 }
 
 .zero-digit {
-  width: calc(70px * 2 + 15px);
+  width: calc(70px * 3 + 30px);
 }
