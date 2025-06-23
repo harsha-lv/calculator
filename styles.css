@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    height: 97vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 75vh;
+    width: 25vw;
+}
+
+.display-container{
+    padding: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.display{
+    color: white;
+}
+
+.misc{
+    padding-right: 25px;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    font-size: 20px;
+    
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    flex: 1;
+}
+
+.digits-container, .operator-container{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.digits-container{
+    flex: 4;
+    width: 100%;
+    gap: 15px;
+}
+
+.digit{
+    width: 72px;
+    height: 72px;
+    font-size: 30px;
+}
+
+.operator-container{
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.operator{
+    font-size: 30px;
+    flex: 1;
+    width: 100%;
+}
+
