@@ -10,8 +10,9 @@ body {
   display: flex;
   flex-direction: column;
   background: black;
-  height: 85vh;
-  width: 25vw;
+  height: 635px;
+  width: 385px;
+  flex-shrink: 0;
 }
 
 .display-container {
@@ -23,6 +24,7 @@ body {
   border-radius: 5px;
   width: 335px;
   height: 75px;
+  box-sizing: border-box;
 }
 
 .display {
